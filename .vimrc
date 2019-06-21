@@ -84,12 +84,21 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
 " インストールするプラグインをここに記述
 NeoBundle 'tiagofumo/vim-nerdtree-syntax-highlight'
+NeoBundle "pangloss/vim-javascript"
+NeoBundle "mxw/vim-jsx"
 
 call neobundle#end()
 
 " ファイルタイプ別のプラグイン/インデントを有効にする
 filetype plugin indent on
 
+
+" ====================Start React=============================
+" js 拡張子でも有効にする
+let g:jsx_ext_required = 0
+" @jsx React.DOM プラグマがある場合のみ有効にする
+let g:jsx_pragma_required = 1
+" ====================End React=============================
 
 
 execute pathogen#infect()
