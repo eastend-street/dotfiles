@@ -69,5 +69,28 @@ syntax on
 hi Comment ctermfg=DarkCyan
 
 
+" NERDTree shortcut
+nnoremap <silent><C-n> :NERDTreeToggle<CR>
+" NERDTree shortcut
+
+" neobundle settings
+if has('vim_starting')
+   " 初回起動時のみruntimepathにneobundleのパスを指定する
+   set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+" NeoBundleを初期化
+call neobundle#begin(expand('~/.vim/bundle/'))
+
+" インストールするプラグインをここに記述
+NeoBundle 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+call neobundle#end()
+
+" ファイルタイプ別のプラグイン/インデントを有効にする
+filetype plugin indent on
+
+
+
 execute pathogen#infect()
 call pathogen#helptags()
