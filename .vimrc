@@ -62,7 +62,12 @@ set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
-"iTerm2の設定
-"let g:hybrid_use_iTerm_colors = 1
-"colorscheme hybrid
-"syntax on
+" iTerm2の設定
+let g:hybrid_use_iTerm_colors = 1
+colorscheme molokai
+syntax on
+hi Comment ctermfg=DarkCyan
+
+
+execute pathogen#infect()
+call pathogen#helptags()
