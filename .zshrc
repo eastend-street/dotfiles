@@ -41,3 +41,19 @@ setopt prompt_subst
 ## vcs_info_msg_0_: バージョン管理システムの情報
 ## RPROMPT: 右プロンプトに情報を表示するときの環境変数
 RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
+
+
+alias pull='git pull'
+alias pullo='git pull origin'
+alias fetch='git fetch'
+alias co='git checkout'
+alias cm='git commit'
+alias st='git status'
+alias add='git add'
+alias stash='git stash'
+alias merge='git merge'
+alias diff='git diff'
+alias push='git push'
+alias pusho='git push origin'
+alias gpoh='git push origin HEAD'
+
