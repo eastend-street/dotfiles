@@ -57,3 +57,4 @@ alias push='git push'
 alias pusho='git push origin'
 alias gpoh='git push origin HEAD'
 
+alias ys="yarn start"
